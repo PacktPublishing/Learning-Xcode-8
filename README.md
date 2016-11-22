@@ -1,7 +1,7 @@
 #Learning Xcode 8
 By Packt
 
-This is the code repository for [Splunk Best Practices](https://www.packtpub.com/application-development/learning-xcode-8?utm_source=github&utm_medium=repository&utm_campaign=9781785885723), published by [Packt Publishing](https://www.packtpub.com/). It contains all the required files to run the code.
+This is the code repository for [Learning Xcode 8](https://www.packtpub.com/application-development/learning-xcode-8?utm_source=github&utm_medium=repository&utm_campaign=9781785885723), published by [Packt Publishing](https://www.packtpub.com/). It contains all the required files to run the code.
 
 Learning Xcode is intended for programmers looking to get a jump start into the world of iOS development. Whether you're a young student, who has only spent a few months with Java, or a seasoned developer, who has spent their career developing for a different platform, all that is expected is a basic understanding of a programming language, such as C++, C#, or Java.
 
