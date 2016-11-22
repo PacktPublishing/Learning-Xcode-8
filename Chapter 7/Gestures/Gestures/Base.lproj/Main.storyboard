@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink.png" translatesAutoresizingMaskIntoConstraints="NO" id="FAO-Tb-gcs">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" identifier="widthConstraint" id="JHd-5H-lWq"/>
+                                    <constraint firstAttribute="width" secondItem="FAO-Tb-gcs" secondAttribute="height" multiplier="1:1" id="Mo9-ed-15A"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="j0y-4q-afO" appends="YES" id="Kdk-Xa-4bE"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FAO-Tb-gcs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2zB-A4-lER"/>
+                            <constraint firstItem="FAO-Tb-gcs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bRR-L5-sGL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="FAO-Tb-gcs" id="RYS-P5-YKG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="j0y-4q-afO">
+                    <connections>
+                        <action selector="flipImage:" destination="BYZ-38-t0r" id="tNL-H8-nAC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wink.png" width="446" height="446"/>
+    </resources>
+</document>

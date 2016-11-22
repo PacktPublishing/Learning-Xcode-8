@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21C357521D9B0B4B00582CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C357511D9B0B4B00582CBD /* AppDelegate.swift */; };
+		21C357541D9B0B4B00582CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C357531D9B0B4B00582CBD /* ViewController.swift */; };
+		21C357571D9B0B4B00582CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C357551D9B0B4B00582CBD /* Main.storyboard */; };
+		21C357591D9B0B4B00582CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C357581D9B0B4B00582CBD /* Assets.xcassets */; };
+		21C3575C1D9B0B4B00582CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C3575A1D9B0B4B00582CBD /* LaunchScreen.storyboard */; };
+		21E7DEC41DAB127B00EEDCA1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E7DEBF1DAB0E5C00EEDCA1 /* Charts.framework */; };
+		21E7DEC51DAB127B00EEDCA1 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21E7DEBF1DAB0E5C00EEDCA1 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21E7DECE1DAC54A600EEDCA1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21E7DECC1DAC54A600EEDCA1 /* Interface.storyboard */; };
+		21E7DED01DAC54A600EEDCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E7DECF1DAC54A600EEDCA1 /* Assets.xcassets */; };
+		21E7DED71DAC54A600EEDCA1 /* Sensors-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21E7DED61DAC54A600EEDCA1 /* Sensors-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		21E7DEDC1DAC54A600EEDCA1 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E7DEDB1DAC54A600EEDCA1 /* InterfaceController.swift */; };
+		21E7DEDE1DAC54A600EEDCA1 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E7DEDD1DAC54A600EEDCA1 /* ExtensionDelegate.swift */; };
+		21E7DEE01DAC54A600EEDCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21E7DEDF1DAC54A600EEDCA1 /* Assets.xcassets */; };
+		21E7DEE41DAC54A600EEDCA1 /* Sensors-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 21E7DECA1DAC54A600EEDCA1 /* Sensors-Watch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21E7DEBE1DAB0E5C00EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		21E7DEC01DAB0E5C00EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		21E7DEC21DAB0E5C00EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		21E7DEC61DAB127B00EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+		21E7DED81DAC54A600EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21C357461D9B0B4B00582CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E7DED51DAC54A600EEDCA1;
+			remoteInfo = "Sensors-Watch Extension";
+		};
+		21E7DEE21DAC54A600EEDCA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21C357461D9B0B4B00582CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21E7DEC91DAC54A600EEDCA1;
+			remoteInfo = "Sensors-Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21C3577F1D9B4D7800582CBD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21E7DEC51DAB127B00EEDCA1 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DEE81DAC54A600EEDCA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				21E7DED71DAC54A600EEDCA1 /* Sensors-Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DEEC1DAC54A600EEDCA1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				21E7DEE41DAC54A600EEDCA1 /* Sensors-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21C3574E1D9B0B4B00582CBD /* Sensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C357511D9B0B4B00582CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21C357531D9B0B4B00582CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21C357561D9B0B4B00582CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21C357581D9B0B4B00582CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21C3575B1D9B0B4B00582CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21C3575D1D9B0B4B00582CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../../../../../Documents/Git/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		21E7DECA1DAC54A600EEDCA1 /* Sensors-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sensors-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E7DECD1DAC54A600EEDCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		21E7DECF1DAC54A600EEDCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21E7DED11DAC54A600EEDCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21E7DED61DAC54A600EEDCA1 /* Sensors-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sensors-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21E7DEDB1DAC54A600EEDCA1 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		21E7DEDD1DAC54A600EEDCA1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		21E7DEDF1DAC54A600EEDCA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21E7DEE11DAC54A600EEDCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21C3574B1D9B0B4B00582CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E7DEC41DAB127B00EEDCA1 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DED31DAC54A600EEDCA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21C357451D9B0B4B00582CBD = {
+			isa = PBXGroup;
+			children = (
+				21C357501D9B0B4B00582CBD /* Sensors */,
+				21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */,
+				21E7DECB1DAC54A600EEDCA1 /* Sensors-Watch */,
+				21E7DEDA1DAC54A600EEDCA1 /* Sensors-Watch Extension */,
+				21C3574F1D9B0B4B00582CBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21C3574F1D9B0B4B00582CBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21C3574E1D9B0B4B00582CBD /* Sensors.app */,
+				21E7DECA1DAC54A600EEDCA1 /* Sensors-Watch.app */,
+				21E7DED61DAC54A600EEDCA1 /* Sensors-Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21C357501D9B0B4B00582CBD /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				21C357511D9B0B4B00582CBD /* AppDelegate.swift */,
+				21C357531D9B0B4B00582CBD /* ViewController.swift */,
+				21C357551D9B0B4B00582CBD /* Main.storyboard */,
+				21C357581D9B0B4B00582CBD /* Assets.xcassets */,
+				21C3575A1D9B0B4B00582CBD /* LaunchScreen.storyboard */,
+				21C3575D1D9B0B4B00582CBD /* Info.plist */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		21E7DEB91DAB0E5C00EEDCA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21E7DEBF1DAB0E5C00EEDCA1 /* Charts.framework */,
+				21E7DEC11DAB0E5C00EEDCA1 /* ChartsRealm.framework */,
+				21E7DEC31DAB0E5C00EEDCA1 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21E7DECB1DAC54A600EEDCA1 /* Sensors-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				21E7DECC1DAC54A600EEDCA1 /* Interface.storyboard */,
+				21E7DECF1DAC54A600EEDCA1 /* Assets.xcassets */,
+				21E7DED11DAC54A600EEDCA1 /* Info.plist */,
+			);
+			path = "Sensors-Watch";
+			sourceTree = "<group>";
+		};
+		21E7DEDA1DAC54A600EEDCA1 /* Sensors-Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				21E7DEDB1DAC54A600EEDCA1 /* InterfaceController.swift */,
+				21E7DEDD1DAC54A600EEDCA1 /* ExtensionDelegate.swift */,
+				21E7DEDF1DAC54A600EEDCA1 /* Assets.xcassets */,
+				21E7DEE11DAC54A600EEDCA1 /* Info.plist */,
+			);
+			path = "Sensors-Watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21C3574D1D9B0B4B00582CBD /* Sensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C357601D9B0B4B00582CBD /* Build configuration list for PBXNativeTarget "Sensors" */;
+			buildPhases = (
+				21C3574A1D9B0B4B00582CBD /* Sources */,
+				21C3574B1D9B0B4B00582CBD /* Frameworks */,
+				21C3574C1D9B0B4B00582CBD /* Resources */,
+				21C3577F1D9B4D7800582CBD /* Embed Frameworks */,
+				21E7DEEC1DAC54A600EEDCA1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21E7DEC71DAB127B00EEDCA1 /* PBXTargetDependency */,
+				21E7DEE31DAC54A600EEDCA1 /* PBXTargetDependency */,
+			);
+			name = Sensors;
+			productName = Sensors;
+			productReference = 21C3574E1D9B0B4B00582CBD /* Sensors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21E7DEC91DAC54A600EEDCA1 /* Sensors-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E7DEE91DAC54A600EEDCA1 /* Build configuration list for PBXNativeTarget "Sensors-Watch" */;
+			buildPhases = (
+				21E7DEC81DAC54A600EEDCA1 /* Resources */,
+				21E7DEE81DAC54A600EEDCA1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21E7DED91DAC54A600EEDCA1 /* PBXTargetDependency */,
+			);
+			name = "Sensors-Watch";
+			productName = "Sensors-Watch";
+			productReference = 21E7DECA1DAC54A600EEDCA1 /* Sensors-Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		21E7DED51DAC54A600EEDCA1 /* Sensors-Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21E7DEE51DAC54A600EEDCA1 /* Build configuration list for PBXNativeTarget "Sensors-Watch Extension" */;
+			buildPhases = (
+				21E7DED21DAC54A600EEDCA1 /* Sources */,
+				21E7DED31DAC54A600EEDCA1 /* Frameworks */,
+				21E7DED41DAC54A600EEDCA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sensors-Watch Extension";
+			productName = "Sensors-Watch Extension";
+			productReference = 21E7DED61DAC54A600EEDCA1 /* Sensors-Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21C357461D9B0B4B00582CBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = PacktPub;
+				TargetAttributes = {
+					21C3574D1D9B0B4B00582CBD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = C8L677C7HM;
+						ProvisioningStyle = Automatic;
+					};
+					21E7DEC91DAC54A600EEDCA1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = C8L677C7HM;
+						ProvisioningStyle = Automatic;
+					};
+					21E7DED51DAC54A600EEDCA1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = C8L677C7HM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21C357491D9B0B4B00582CBD /* Build configuration list for PBXProject "Sensors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21C357451D9B0B4B00582CBD;
+			productRefGroup = 21C3574F1D9B0B4B00582CBD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 21E7DEB91DAB0E5C00EEDCA1 /* Products */;
+					ProjectRef = 21E7DEB81DAB0E5C00EEDCA1 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				21C3574D1D9B0B4B00582CBD /* Sensors */,
+				21E7DEC91DAC54A600EEDCA1 /* Sensors-Watch */,
+				21E7DED51DAC54A600EEDCA1 /* Sensors-Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		21E7DEBF1DAB0E5C00EEDCA1 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 21E7DEBE1DAB0E5C00EEDCA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21E7DEC11DAB0E5C00EEDCA1 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 21E7DEC01DAB0E5C00EEDCA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		21E7DEC31DAB0E5C00EEDCA1 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 21E7DEC21DAB0E5C00EEDCA1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21C3574C1D9B0B4B00582CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C3575C1D9B0B4B00582CBD /* LaunchScreen.storyboard in Resources */,
+				21C357591D9B0B4B00582CBD /* Assets.xcassets in Resources */,
+				21C357571D9B0B4B00582CBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DEC81DAC54A600EEDCA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E7DED01DAC54A600EEDCA1 /* Assets.xcassets in Resources */,
+				21E7DECE1DAC54A600EEDCA1 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DED41DAC54A600EEDCA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E7DEE01DAC54A600EEDCA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21C3574A1D9B0B4B00582CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C357541D9B0B4B00582CBD /* ViewController.swift in Sources */,
+				21C357521D9B0B4B00582CBD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21E7DED21DAC54A600EEDCA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E7DEDE1DAC54A600EEDCA1 /* ExtensionDelegate.swift in Sources */,
+				21E7DEDC1DAC54A600EEDCA1 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21E7DEC71DAB127B00EEDCA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 21E7DEC61DAB127B00EEDCA1 /* PBXContainerItemProxy */;
+		};
+		21E7DED91DAC54A600EEDCA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E7DED51DAC54A600EEDCA1 /* Sensors-Watch Extension */;
+			targetProxy = 21E7DED81DAC54A600EEDCA1 /* PBXContainerItemProxy */;
+		};
+		21E7DEE31DAC54A600EEDCA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21E7DEC91DAC54A600EEDCA1 /* Sensors-Watch */;
+			targetProxy = 21E7DEE21DAC54A600EEDCA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21C357551D9B0B4B00582CBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C357561D9B0B4B00582CBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21C3575A1D9B0B4B00582CBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21C3575B1D9B0B4B00582CBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21E7DECC1DAC54A600EEDCA1 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21E7DECD1DAC54A600EEDCA1 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21C3575E1D9B0B4B00582CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21C3575F1D9B0B4B00582CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21C357611D9B0B4B00582CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				INFOPLIST_FILE = Sensors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		21C357621D9B0B4B00582CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				INFOPLIST_FILE = Sensors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		21E7DEE61DAC54A600EEDCA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				INFOPLIST_FILE = "Sensors-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		21E7DEE71DAC54A600EEDCA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				INFOPLIST_FILE = "Sensors-Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		21E7DEEA1DAC54A600EEDCA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				IBSC_MODULE = Sensors_Watch_Extension;
+				INFOPLIST_FILE = "Sensors-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		21E7DEEB1DAC54A600EEDCA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C8L677C7HM;
+				IBSC_MODULE = Sensors_Watch_Extension;
+				INFOPLIST_FILE = "Sensors-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = PacktPub.Sensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21C357491D9B0B4B00582CBD /* Build configuration list for PBXProject "Sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C3575E1D9B0B4B00582CBD /* Debug */,
+				21C3575F1D9B0B4B00582CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C357601D9B0B4B00582CBD /* Build configuration list for PBXNativeTarget "Sensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C357611D9B0B4B00582CBD /* Debug */,
+				21C357621D9B0B4B00582CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21E7DEE51DAC54A600EEDCA1 /* Build configuration list for PBXNativeTarget "Sensors-Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E7DEE61DAC54A600EEDCA1 /* Debug */,
+				21E7DEE71DAC54A600EEDCA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21E7DEE91DAC54A600EEDCA1 /* Build configuration list for PBXNativeTarget "Sensors-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21E7DEEA1DAC54A600EEDCA1 /* Debug */,
+				21E7DEEB1DAC54A600EEDCA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21C357461D9B0B4B00582CBD /* Project object */;
+}
